@@ -8,6 +8,14 @@
     "cursor-global": true,
     "cursor-workspace": true
   },
+  "mcp.servers": {
+    "bmad": {
+      "command": "node",
+      "args": ["/Users/disandup/Desktop/BMAD MCP Server Copilot/Untitled/mcp-server/build/index.js"],
+      "disabled": false,
+      "autoApprove": []
+    }
+  },
   "github.copilot.chat.agent.autoFix": true,
   "chat.tools.autoApprove": false,
   "cSpell.words": [

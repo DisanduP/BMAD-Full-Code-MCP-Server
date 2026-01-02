@@ -41,8 +41,11 @@
     "release:patch": "gh workflow run \"Manual Release\" -f version_bump=patch",
     "release:watch": "gh run watch",
     "test": "npm run test:schemas && npm run test:install && npm run validate:bundles && npm run validate:schemas && npm run lint && npm run format:check",
+    "test:comprehensive": "./scripts/run-comprehensive-tests.sh",
     "test:coverage": "c8 --reporter=text --reporter=html npm run test:schemas",
     "test:install": "node test/test-installation-components.js",
+    "test:mcp-agency": "./scripts/run-comprehensive-tests.sh",
+    "test:report": "ls -la test-reports/ | tail -5",
     "test:schemas": "node test/test-agent-schema.js",
     "validate:bundles": "node tools/validate-bundles.js",
     "validate:schemas": "node tools/validate-agent-schema.js"
